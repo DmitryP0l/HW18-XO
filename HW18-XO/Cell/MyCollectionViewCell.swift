@@ -5,6 +5,10 @@
 //  Created by lion on 19.11.21.
 //
 
+protocol MyCollectionViewCellDelegate: AnyObject {
+    func addSymbol(symbol: String)
+}
+
 import UIKit
 
 class MyCollectionViewCell: UICollectionViewCell {
@@ -14,9 +18,10 @@ class MyCollectionViewCell: UICollectionViewCell {
     static let identifier = "MyCollectionViewCell"
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    
+    func addSymbol(symbol: String) {
+        symbolLabel.text = symbol
     }
 
 }
