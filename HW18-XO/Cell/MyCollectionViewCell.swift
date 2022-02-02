@@ -5,9 +5,8 @@
 //  Created by lion on 19.11.21.
 //
 
-protocol MyCollectionViewCellDelegate: AnyObject {
-    func addSymbol(symbol: String)
-}
+
+
 
 import UIKit
 
@@ -20,8 +19,4 @@ class MyCollectionViewCell: UICollectionViewCell {
     
     
     
-    func addSymbol(symbol: String) {
-        symbolLabel.text = symbol
-    }
-
 }
